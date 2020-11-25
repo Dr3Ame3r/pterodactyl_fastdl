@@ -19,9 +19,9 @@ We will need to configure our egg to use a JSON file parser
     "csgo/cfg/server.cfg": {
         "parser": "file",
         "find": {
-            "sv_downloadurl": "sv_downloadurl http://{{env.P_SERVER_LOCATION}}/{{env.P_SERVER_UUID}}/csgo",
-            "sv_allowdownload": "sv_allowdownload 1",
-            "sv_allowupload": "sv_allowupload 1"
+            "sv_downloadurl": "sv_downloadurl \"http://{{env.P_SERVER_LOCATION}}/{{env.P_SERVER_UUID}}/csgo/\"",
+            "sv_allowdownload": "sv_allowdownload \"1\"",
+            "sv_allowupload": "sv_allowupload \"0\""
         }
     }
 }
